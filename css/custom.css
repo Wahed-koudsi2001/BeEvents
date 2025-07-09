@@ -1237,16 +1237,34 @@ header.main-header .header-sticky.active {
 	margin-left: 35px;
 }
 
-.about-image video {
-	display: block;
-	border-radius: 20px;
-}
-
 .about-image img {
 	width: 100%;
 	aspect-ratio: 1 / 1.405;
 	object-fit: cover;
 	border-radius: 20px;
+}
+.about-info-box {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 100%;
+	max-width: 300px;
+	backdrop-filter: saturate(180%) blur(40px);
+	-webkit-backdrop-filter: saturate(180%) blur(40px);
+	border-radius: 20px;
+	padding: 25px;
+	z-index: 1;
+}
+
+.about-info-box h3 {
+	font-size: 16px;
+	line-height: 1.4em;
+	margin-bottom: 70px;
+}
+
+.about-info-box img {
+	width: 100%;
+	max-width: 102px;
 }
 .nav-item span {
 	font-family: "Tajawal", sans-serif;
@@ -4395,6 +4413,16 @@ header.main-header .header-sticky.active {
 @media only screen and (max-width: 991px) {
 	header.main-header .header-sticky.active {
 		padding: 0;
+	}
+	.about-info-box {
+		max-width: 200px;
+		top: 20px;
+		right: 20px;
+		padding: 20px;
+	}
+
+	.about-info-box h3 {
+		margin-bottom: 40px;
 	}
 
 	.navbar {

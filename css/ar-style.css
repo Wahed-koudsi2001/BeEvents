@@ -13,8 +13,8 @@ body {
     -o-transform: translate(60%, 50%);
 }
 .about-us-image {
-    margin-right: 35px;
-    margin-left: 0;
+    margin-left: 35px;
+    margin-right: 0;
 }
 .section-title h3 {
     letter-spacing: initial;
@@ -111,7 +111,7 @@ body {
 }
 @media only screen and (max-width: 991px) {
     .about-us-image {
-        margin-right: 0;
+        margin-left: 0;
     }
     .review-counter {
         margin-left: 15px;
