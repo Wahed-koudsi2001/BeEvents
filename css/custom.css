@@ -1893,7 +1893,7 @@ header.main-header .header-sticky.active {
 .cta-box {
 	padding: 40px 0;
 	position: relative;
-	z-index: 99999999999999999999999999999999;
+	z-index: 999;
 }
 
 .cta-box-box {
