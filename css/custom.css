@@ -4409,6 +4409,14 @@ header.main-header .header-sticky.active {
 		height: 650px;
 	}
 }
+.header-btn a {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.header-btn a i {
+	font-size: 18px;
+}
 
 @media only screen and (max-width: 991px) {
 	header.main-header .header-sticky.active {
