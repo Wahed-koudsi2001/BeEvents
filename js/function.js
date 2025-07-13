@@ -275,3 +275,96 @@
 	}
 
 })(jQuery);
+
+
+$(document).ready(function () {
+	const sections = $("section[id]");
+	const navLinks = $(".navbar-nav .nav-link");
+
+	$(window).on("scroll", function () {
+		const scrollPos = $(document).scrollTop() + 115;
+
+		sections.each(function () {
+			const top = $(this).offset().top;
+			const bottom = top + $(this).outerHeight();
+			const id = $(this).attr("id");
+
+			if (scrollPos >= top && scrollPos < bottom) {
+
+				navLinks.removeClass("active");
+
+				navLinks.each(function () {
+					if ($(this).attr("href") === "#" + id) {
+						$(this).addClass("active");
+					}
+				});
+			}
+		});
+	});
+	navLinks.on("click", function (e) {
+		e.preventDefault();
+		const targetId = $(this).attr("href").substring(1);
+		const target = document.getElementById(targetId);
+
+		if (target) {
+			const topOffset = $(target).offset().top - 115;
+			$("html, body").animate({ scrollTop: topOffset }, 100);
+		}
+	});
+});
+
+
+const scrollBtn = document.getElementById("scrollToTop");
+const progressCircle = document.querySelector(".progress-ring .progress");
+const scrollPercentText = document.getElementById("scrollPercent");
+const radius = 26;
+const circumference = 2 * Math.PI * radius;
+
+window.addEventListener("scroll", () => {
+	const scrollTop = window.scrollY;
+	const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+	const percent = Math.round((scrollTop / docHeight) * 100);
+
+	const offset = circumference - (percent / 100) * circumference;
+	progressCircle.style.strokeDashoffset = offset;
+	scrollPercentText.textContent = `${percent}%`;
+
+	scrollBtn.style.display = scrollTop > 100 ? "flex" : "none";
+});
+
+scrollBtn.addEventListener("click", () => {
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+});
+// Load the YouTube IFrame API
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// This function will be called when the API is ready
+var player;
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player("player", {
+		height: "100%",
+		width: "100%",
+		videoId: "b1iRKsSchkI", // your video ID
+		playerVars: {
+			autoplay: 1,
+			controls: 0,
+			loop: 1,
+			mute: 1,
+			playlist: "b1iRKsSchkI", // required for looping
+			rel: 0,
+			modestbranding: 1,
+			showinfo: 0
+		},
+		events: {
+			onReady: function (e) {
+				e.target.playVideo();
+			}
+		}
+	});
+}
