@@ -586,11 +586,23 @@ body {
 /************************************/
 
 header.main-header {
-	position: relative;
 	background: transparent;
 	border-radius: 0;
 	z-index: 100;
 	transition: all 0.3s ease;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0 15px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
 }
 
 header.main-header .header-sticky {
@@ -605,25 +617,9 @@ header.main-header .header-sticky.hide {
 	border-radius: 0;
 }
 
-header.main-header .header-sticky.active {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	border-radius: 0;
-	transform: translateY(0);
-	background: var(--bg-color);
-	border-bottom: 1px solid var(--divider-color);
-	padding: 0 15px;
-}
 .main-header.active {
 	transition: 0.5s linear;
 	background: #151515;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	margin: 0;
-	padding: 0 20px;
 }
 .navbar {
 	padding: 30px 0;
@@ -1161,7 +1157,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .about-us {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .about-us-content .section-title h2 img {
@@ -1274,7 +1270,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-services {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .service-box {
@@ -1503,7 +1499,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .intro-video {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .intro-video .container-fluid {
@@ -1616,7 +1612,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .how-it-work {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .how-work-content {
@@ -1753,7 +1749,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-facts {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .facts-item {
@@ -1842,7 +1838,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-projects {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .our-projects .container-fluid {
@@ -1875,6 +1871,10 @@ header.main-header .header-sticky.active {
 
 .project-item:hover .project-image img {
 	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 
 .project-content {
@@ -1909,7 +1909,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .cta-box {
-	padding: 40px 0;
+	padding-bottom: 110px;
 	position: relative;
 	z-index: 999;
 }
@@ -2042,7 +2042,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-testimonials {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .review-rating-box {
@@ -2264,7 +2264,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-faqs {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .faqs-image {
@@ -2345,7 +2345,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .our-blog {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .post-item {
@@ -2817,7 +2817,7 @@ header.main-header .header-sticky.active {
 }
 
 .our-values {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .mission-vision-item {
@@ -2881,7 +2881,7 @@ header.main-header .header-sticky.active {
 }
 
 .what-we-do {
-	padding: 40px 0;
+	padding-bottom: 110px;
 }
 
 .what-we-content {
@@ -3003,10 +3003,6 @@ header.main-header .header-sticky.active {
 	font-size: 20px;
 	text-transform: capitalize;
 	margin-bottom: 115px;
-}
-
-.our-faqs.about-our-faqs {
-	padding: 80px 0;
 }
 
 /************************************/
@@ -4347,6 +4343,7 @@ header.main-header .header-sticky.active {
 		width: calc(100% - 30px);
 		margin: 0 15px;
 		border-radius: 26px;
+		margin-top: 120px;
 	}
 
 	.main-footer {
@@ -4455,6 +4452,7 @@ header.main-header .header-sticky.active {
 		width: 100%;
 		border-radius: 0;
 		margin: 0;
+		margin-top: 82px;
 	}
 
 	.bg-section .container-fluid {
@@ -4979,7 +4977,7 @@ header.main-header .header-sticky.active {
 	}
 
 	.our-values {
-		padding: 40px 0 10px;
+		padding: 40px 0;
 	}
 
 	.mission-vision-item {
@@ -6007,9 +6005,9 @@ header.main-header .header-sticky.active {
 	height: 60px;
 	cursor: pointer;
 	z-index: 1000;
-	display: flex;
 	align-items: center;
 	justify-content: center;
+	display: none;
 }
 
 .progress-ring {

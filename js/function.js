@@ -10,7 +10,7 @@
 	});
 
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() >= 400) {
+		if ($(this).scrollTop() >= 10) {
 			$("header.main-header").addClass("active");
 		} else {
 			$("header.main-header").removeClass("active");
@@ -314,11 +314,14 @@ $(document).ready(function () {
 });
 
 
-const scrollBtn = document.getElementById("scrollToTop");
 const progressCircle = document.querySelector(".progress-ring .progress");
 const scrollPercentText = document.getElementById("scrollPercent");
+const scrollBtn = document.getElementById("scrollToTop");
+
 const radius = 26;
 const circumference = 2 * Math.PI * radius;
+progressCircle.style.strokeDasharray = `${circumference}`;
+progressCircle.style.strokeDashoffset = `${circumference}`;
 
 window.addEventListener("scroll", () => {
 	const scrollTop = window.scrollY;
@@ -329,7 +332,7 @@ window.addEventListener("scroll", () => {
 	progressCircle.style.strokeDashoffset = offset;
 	scrollPercentText.textContent = `${percent}%`;
 
-	scrollBtn.style.display = scrollTop > 100 ? "flex" : "none";
+	scrollBtn.style.display = scrollTop > 0 ? "flex" : "none";
 });
 
 scrollBtn.addEventListener("click", () => {
@@ -338,6 +341,7 @@ scrollBtn.addEventListener("click", () => {
 		behavior: "smooth"
 	});
 });
+
 // Load the YouTube IFrame API
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
@@ -350,13 +354,13 @@ function onYouTubeIframeAPIReady() {
 	player = new YT.Player("player", {
 		height: "100%",
 		width: "100%",
-		videoId: "b1iRKsSchkI", // your video ID
+		videoId: "b1iRKsSchkI",
 		playerVars: {
 			autoplay: 1,
 			controls: 0,
 			loop: 1,
 			mute: 1,
-			playlist: "b1iRKsSchkI", // required for looping
+			playlist: "b1iRKsSchkI",
 			rel: 0,
 			modestbranding: 1,
 			showinfo: 0
