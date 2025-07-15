@@ -1059,14 +1059,13 @@ header.main-header .header-sticky.hide {
 	border-radius: 20px;
 }
 
-.hero-image img {
+.hero-image video {
 	width: 100%;
 	height: 100%;
 	aspect-ratio: 1 / 0.93;
 	border-radius: 20px;
 	object-fit: cover;
 }
-
 .hero-counter-box {
 	position: absolute;
 	right: 40px;
@@ -4382,12 +4381,8 @@ header.main-header .header-sticky.hide {
 
 	.hero-image,
 	.hero-image figure,
-	.hero-image img {
+	.hero-image video {
 		height: auto;
-	}
-
-	.hero-image img {
-		aspect-ratio: 1 / 0.6;
 	}
 
 	.hero-counter-box {
