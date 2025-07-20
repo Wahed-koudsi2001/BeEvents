@@ -86,13 +86,13 @@
                                     <a class="nav-link" href="#projects">مشاريعنا</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#how_we_work">كيف نعمل</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#faqs">الاسئلة الشائعة</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#blog">المدونة</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">تواصل معنا</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="en" class="nav-link d-flex align-items-center">
@@ -2188,6 +2188,95 @@
     </div>
     <!-- Our Blog Section End -->
 
+    <!-- Contact Map Form Section Start -->
+    <div class="contact-map-form" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Google Map Start -->
+                    <div class="google-map">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">تواصل معنا</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">
+                                فكرتك جاهزة؟ <span>BeEvents</span>
+                            </h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">
+                                فكرتك جاهزة؟ BeEvents تمتلك كل الإجابات التي تحولها إلى نجاح آسر فكرتك جاهزة؟ BeEvents
+                                تمتلك كل الإجابات التي تحولها إلى نجاح آسر.
+                            </p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Google Map Start -->
+                        <div class="google-map-iframe">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- Google Map End -->
+                    </div>
+                    <!-- Google Map End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Contact Us Form Start -->
+                    <div class="contact-us-form">
+                        <!-- Contact Form Content Start -->
+                        <div class="contact-form-content wow fadeInUp">
+                            <h3>دعونا نبني حلولاً أكثر ذكاءً معًا</h3>
+                            <p>
+                                تواصل معنا لاستكشاف كيف يمكن لخبرتنا في مجال المعارض والمؤتمرات أن تساعدك في تحويل
+                                أفكارك إلى واقع.
+                            </p>
+                        </div>
+                        <!-- Contact Form Content End -->
+
+                        <!-- Contact Form Start -->
+                        <div class="contact-form">
+                            <form id="contactForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp"
+                                data-wow-delay="0.2s">
+                                <div class="row">
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label class="form-label">الاسم كاملاً</label>
+                                        <input type="text" name="fname" class="form-control" id="fname"
+                                            placeholder="أدخل الاسم" required>
+                                    </div>
+
+                                    <div class="form-group col-md-6 mb-4">
+                                        <label class="form-label">رقم الهاتف المحمول</label>
+                                        <input type="text" name="phone" class="form-control" id="phone"
+                                            placeholder="أدخل الرقم" required>
+                                    </div>
+
+                                    <div class="form-group col-12 mb-4">
+                                        <label class="form-label">عنوان البريد الإلكتروني</label>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                            placeholder="أدخل البريد الإلكتروني" required>
+                                    </div>
+
+                                    <div class="form-group col-md-12 mb-5">
+                                        <label class="form-label">رسالة</label>
+                                        <textarea name="message" class="form-control" id="message" rows="4"
+                                            placeholder="اكتب الرسالة..."></textarea>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn-default"><span>إرسال الرسالة</span></button>
+                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Contact Form End -->
+                    </div>
+                    <!-- Contact Us Form End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Map Form Section End -->
+
     <!-- Footer Start -->
     <footer class="main-footer bg-section">
         <div class="container">
@@ -2266,15 +2355,30 @@
                     <!-- About Footer End -->
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-2 col-md-6">
                     <!-- Footer Links Start -->
                     <div class="footer-links footer-service-links">
                         <h3>روابط سريعة</h3>
                         <ul>
-                            <li><a href="service-single.html">الرئيسية</a></li>
-                            <li><a href="service-single.html">من نحن</a></li>
-                            <li><a href="service-single.html">خدماتنا</a></li>
-                            <li><a href="service-single.html">المدونة</a></li>
+                            <li><a href="#main">الرئيسية</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#why_us">لماذا نحن</a></li>
+                            <li><a href="#projects">مشاريعنا</a></li>
+                            <li><a href="#faqs">الأسئلة الشائعة</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Links End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Footer Links Start -->
+                    <div class="footer-links footer-service-links">
+                        <h3>خدماتنا</h3>
+                        <ul>
+                            <li><a href="#services">إدارة وتنظيم الفعاليات والمهرجانات والمعارض</a></li>
+                            <li><a href="#services">لوازم وخدمات المهرجانات والفعاليات</a></li>
+                            <li><a href="#services">العروض الحية الدولية</a></li>
+                            <li><a href="#services">المسيرات الموسيقية الجوالة</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->
@@ -2285,25 +2389,12 @@
                     <div class="footer-links footer-service-links">
                         <h3>خدماتنا</h3>
                         <ul>
-                            <li><a href="service-single.html">عرضو ثقافية</a></li>
-                            <li><a href="service-single.html">عرضو ثقافية</a></li>
-                            <li><a href="service-single.html">عرضو ثقافية</a></li>
-                            <li><a href="service-single.html">عرضو ثقافية</a></li>
+                            <li><a href="#services">أفكار فنية</a></li>
+                            <li><a href="#services">العروض الثقافية</a></li>
+                            <li><a href="#services">العروض الموسيقية</a></li>
+                            <li><a href="#services">الترفيه التعليمي</a></li>
+                            <li><a href="#services">عروض مخصصة</a></li>
                         </ul>
-                    </div>
-                    <!-- Footer Links End -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <!-- Footer Links Start -->
-                    <div class="footer-links">
-                        <h3>معلومات التواصل</h3>
-                        <!-- Footer Contact Item Start -->
-                        <div class="footer-contact-item">
-                            <h3>
-                                <a dir="ltr" href="tel:00966540088855">(+966) - 05 400 88 855</a>
-                            </h3>
-                        </div>
                     </div>
                     <!-- Footer Links End -->
                 </div>
@@ -2325,6 +2416,8 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+
 
     <!-- Scroll to Top Button -->
     <div id="scrollToTop" class="scroll-top">

@@ -109,6 +109,14 @@ body {
         -o-transform: translate(-50%, -50%);
     }
 }
+.google-map {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.how-work-steps {
+    margin-left: 0;
+    margin-right: 15px;
+}
 @media only screen and (max-width: 991px) {
     .about-us-image {
         margin-left: 0;
@@ -139,5 +147,14 @@ body {
     }
     .cta-box-list ul li:before {
         right: 15px;
+    }
+    .google-map {
+        margin-left: 0;
+    }
+    .contact-map-form {
+        padding: 40px 0 0 0;
+    }
+    .how-work-steps {
+        margin-right: 0;
     }
 }
