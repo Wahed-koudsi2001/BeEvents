@@ -516,7 +516,7 @@ body {
 }
 
 .section-title h1 {
-	font-size: 30px;
+	font-size: 40px;
 	line-height: 1.6em;
 	font-weight: 700;
 	letter-spacing: -0.02em;
@@ -593,7 +593,6 @@ header.main-header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	margin: 0;
 	padding: 0 15px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
@@ -886,8 +885,9 @@ header.main-header .header-sticky.hide {
 	background: url("../images/hero-image.jpg") no-repeat;
 	background-position: center center;
 	background-size: cover;
-	padding: 200px 0;
+	padding: 150px 0;
 	overflow: hidden;
+	height: 100vh;
 }
 
 .hero.hero-bg-image::before {
@@ -904,7 +904,10 @@ header.main-header .header-sticky.hide {
 	height: 100%;
 	z-index: 1;
 }
-
+.hero-video{
+	position: relative;
+	z-index: 999;
+}
 .hero.hero-bg-image.hero-video .hero-bg-video {
 	position: absolute;
 	top: 0;
@@ -1156,7 +1159,8 @@ header.main-header .header-sticky.hide {
 /************************************/
 
 .about-us {
-	padding-bottom: 110px;
+	padding-bottom: 120px;
+	padding-top: 200px;
 }
 
 .about-us-content .section-title h2 img {
@@ -4339,10 +4343,8 @@ header.main-header .header-sticky.hide {
 
 @media only screen and (max-width: 1800px) {
 	.bg-section {
-		width: calc(100% - 30px);
-		margin: 0 15px;
+		width: 100%;
 		border-radius: 26px;
-		margin-top: 120px;
 	}
 
 	.main-footer {
@@ -4447,7 +4449,6 @@ header.main-header .header-sticky.hide {
 		width: 100%;
 		border-radius: 0;
 		margin: 0;
-		margin-top: 82px;
 	}
 
 	.bg-section .container-fluid {
@@ -4517,7 +4518,7 @@ header.main-header .header-sticky.hide {
 	}
 
 	.hero.hero-bg-image {
-		padding: 100px 0;
+		padding: 50px 0;
 	}
 
 	.hero-content {
@@ -5408,7 +5409,7 @@ header.main-header .header-sticky.hide {
 	}
 
 	.section-title h1 {
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	.section-title h2 {
