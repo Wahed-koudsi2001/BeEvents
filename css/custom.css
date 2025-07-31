@@ -1367,7 +1367,7 @@ header.main-header .header-sticky.hide {
 
 .service-cta-box {
 	position: relative;
-	background: url("../images/service-2.webp") no-repeat;
+	background: url("../images/cta-box-bg.webp") no-repeat;
 	background-position: center center;
 	background-size: cover;
 	border: 1px solid var(--divider-color);
