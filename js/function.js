@@ -341,34 +341,3 @@ scrollBtn.addEventListener("click", () => {
 		behavior: "smooth"
 	});
 });
-
-// Load the YouTube IFrame API
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-// This function will be called when the API is ready
-var player;
-function onYouTubeIframeAPIReady() {
-	player = new YT.Player("player", {
-		height: "100%",
-		width: "100%",
-		videoId: "b1iRKsSchkI",
-		playerVars: {
-			autoplay: 1,
-			controls: 0,
-			loop: 1,
-			mute: 1,
-			playlist: "b1iRKsSchkI",
-			rel: 0,
-			modestbranding: 1,
-			showinfo: 0
-		},
-		events: {
-			onReady: function (e) {
-				e.target.playVideo();
-			}
-		}
-	});
-}
