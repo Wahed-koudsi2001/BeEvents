@@ -879,9 +879,6 @@ header.main-header .header-sticky.hide {
 
 .hero.hero-bg-image {
 	position: relative;
-	background: url("../images/hero-image.jpg") no-repeat;
-	background-position: center center;
-	background-size: cover;
 	padding: 150px 0;
 	overflow: hidden;
 	height: 100%;
