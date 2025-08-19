@@ -4113,7 +4113,6 @@ header.main-header .header-sticky.hide {
 	position: absolute;
 	top: 50%;
 	right: 50%;
-	left: 0;
 	transform: translate(50%, -50%);
 	font-size: 20px;
 	background: linear-gradient(136.83deg, var(--accent-color) 2.01%, var(--accent-secondary-color) 97.82%);
