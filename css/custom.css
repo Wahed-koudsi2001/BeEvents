@@ -3310,7 +3310,16 @@ header.main-header .header-sticky.hide {
 	font-weight: 900;
 	color: var(--accent-color);
 }
-
+.row-images img {
+	margin: 20px 0;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	height: 100%;
+	width: 100%;
+}
 .service-solution-box,
 .service-impact-box,
 .service-innovation-box,
@@ -3572,7 +3581,7 @@ header.main-header .header-sticky.hide {
 /************************************/
 
 .page-single-post {
-	padding: 160px 0;
+	padding: 100px 0 50px 0;
 }
 
 .post-single-meta {
@@ -3608,7 +3617,6 @@ header.main-header .header-sticky.hide {
 
 .post-image img {
 	width: 100%;
-	aspect-ratio: 1 / 0.5;
 	object-fit: cover;
 	border-radius: 20px;
 }
@@ -5191,7 +5199,7 @@ header.main-header .header-sticky.hide {
 	}
 
 	.page-single-post {
-		padding: 80px 0;
+		padding: 50px 0 30px 0;
 	}
 
 	.post-image {
@@ -5884,10 +5892,6 @@ header.main-header .header-sticky.hide {
 
 	.post-single-meta ol li i {
 		font-size: 16px;
-	}
-
-	.post-image img {
-		aspect-ratio: 1 / 0.7;
 	}
 
 	.post-entry blockquote {

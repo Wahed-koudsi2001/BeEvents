@@ -238,41 +238,41 @@
 })(jQuery);
 
 
-$(document).ready(function () {
-	const sections = $("section[id]");
-	const navLinks = $(".navbar-nav .nav-link");
+// $(document).ready(function () {
+// 	const sections = $("section[id]");
+// 	const navLinks = $(".navbar-nav .nav-link");
 
-	$(window).on("scroll", function () {
-		const scrollPos = $(document).scrollTop() + 115;
+// 	$(window).on("scroll", function () {
+// 		const scrollPos = $(document).scrollTop() + 115;
 
-		sections.each(function () {
-			const top = $(this).offset().top;
-			const bottom = top + $(this).outerHeight();
-			const id = $(this).attr("id");
+// 		sections.each(function () {
+// 			const top = $(this).offset().top;
+// 			const bottom = top + $(this).outerHeight();
+// 			const id = $(this).attr("id");
 
-			if (scrollPos >= top && scrollPos < bottom) {
+// 			if (scrollPos >= top && scrollPos < bottom) {
 
-				navLinks.removeClass("active");
+// 				navLinks.removeClass("active");
 
-				navLinks.each(function () {
-					if ($(this).attr("href") === "#" + id) {
-						$(this).addClass("active");
-					}
-				});
-			}
-		});
-	});
-	navLinks.on("click", function (e) {
-		e.preventDefault();
-		const targetId = $(this).attr("href").substring(1);
-		const target = document.getElementById(targetId);
+// 				navLinks.each(function () {
+// 					if ($(this).attr("href") === "#" + id) {
+// 						$(this).addClass("active");
+// 					}
+// 				});
+// 			}
+// 		});
+// 	});
+// 	navLinks.on("click", function (e) {
+// 		e.preventDefault();
+// 		const targetId = $(this).attr("href").substring(1);
+// 		const target = document.getElementById(targetId);
 
-		if (target) {
-			const topOffset = $(target).offset().top - 115;
-			$("html, body").animate({ scrollTop: topOffset }, 100);
-		}
-	});
-});
+// 		if (target) {
+// 			const topOffset = $(target).offset().top - 115;
+// 			$("html, body").animate({ scrollTop: topOffset }, 100);
+// 		}
+// 	});
+// });
 
 
 const progressCircle = document.querySelector(".progress-ring .progress");
